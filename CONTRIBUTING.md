@@ -1,21 +1,24 @@
 # Contributing Guide
 
-Thank you for contributing to this project. This guide explains how to submit changes clearly and efficiently.
+Thank you for contributing to Nucleo LDAP. This guide explains how to contribute across the organization repositories.
+
+This repository stores the organization-level defaults. Repository-specific rules can extend this guide.
 
 ## Before You Start
 
 - Check open issues to avoid duplicates
-- Open an issue before implementing large changes
+- Open an issue in the target repository before implementing large changes
 - Use the bug report template for bugs
 - Use the feature request template for new ideas
 
 ## Recommended Workflow
 
-1. Fork the repository and create a branch from `main`
+1. Fork the target repository and create a branch from its default branch
 2. Keep commits small, readable, and focused
 3. Add or update tests related to your change
 4. Open a pull request using the provided template
 5. Address review feedback until approval
+6. For cross-repository work, open linked PRs and keep them synchronized
 
 ## Branch Naming
 
@@ -49,6 +52,13 @@ Recommended format:
 
 Common types: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`, `ci`.
 
+## Cross-Repository Changes
+
+- Split changes by repository responsibility
+- Open companion PRs instead of mixing unrelated concerns
+- Link related PRs in each PR description
+- Mention merge order when one PR depends on another
+
 ## Code Quality
 
 - Follow the existing code style
@@ -71,6 +81,7 @@ A PR is ready for review when it:
 - References an issue (`Closes #...`) when applicable
 - Includes manual validation steps
 - Includes screenshots for UI changes
+- Lists linked PRs if the change spans repositories
 
 ## Review and Feedback
 
@@ -83,4 +94,3 @@ A PR is ready for review when it:
 By participating in this project, you agree to follow the repository Code of Conduct. Disrespectful, abusive, or discriminatory behaviour is not accepted.
 
 Thank you for your contribution.
-

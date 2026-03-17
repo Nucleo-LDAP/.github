@@ -2,13 +2,13 @@
 
 <img src="https://raw.githubusercontent.com/NucleoLDAP/nucleo-ldap/main/assets/logo.png" alt="Nucleo LDAP" width="120" />
 
-# Nucleo LDAP --DRAFT--
+# Nucleo LDAP
 
 **The modern, self-hostable web UI for LDAP administration.**  
 Manage users, groups & organizational units on any LDAPv3 server — clean, fast, open source.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Status](https://img.shields.io/badge/status-under%20active%20development-orange)]()
+[![Status](https://img.shields.io/badge/status-under%20active%20development-orange)](https://github.com/NucleoLDAP/nucleo-ldap)
 [![NestJS](https://img.shields.io/badge/Backend-NestJS-red?logo=nestjs)](https://nestjs.com)
 [![Next.js](https://img.shields.io/badge/Frontend-Next.js-black?logo=next.js)](https://nextjs.org)
 [![.NET Aspire](https://img.shields.io/badge/Orchestration-.NET%20Aspire-purple?logo=dotnet)](https://learn.microsoft.com/dotnet/aspire)
@@ -17,10 +17,20 @@ Manage users, groups & organizational units on any LDAPv3 server — clean, fast
 
 ---
 
+## Project status
+
+Nucleo is **pre-1.0** and under active development.
+
+- Stable today: core LDAP connectivity, users/groups management, password reset, audit log
+- In progress: split into dedicated repositories (AppHost, Web app, API), Active Directory support, DIT explorer
+- Note: APIs and UX can evolve quickly until the first stable release
+
+---
+
 ## Why Nucleo?
 
-Existing LDAP management tools are either outdated (phpLDAPadmin),
-too complex (FusionDirectory), or too limited (lldap's built-in UI).  
+Existing LDAP management tools are either outdated,
+too complex, or too limited.  
 **Nucleo** is built for homelab admins, self-hosters or small organizations who want a
 modern, lightweight, and Docker-friendly alternative.
 
@@ -32,20 +42,43 @@ modern, lightweight, and Docker-friendly alternative.
 
 ---
 
-## What you can do with Nucleo
+## Getting Started
+
+### Repository layout
+
+| Repository             | Purpose                                           |
+| ---------------------- | ------------------------------------------------- |
+| `nucleo-ldap-app-host` | .NET Aspire AppHost and local stack orchestration |
+| `nucleo-ldap-web`      | Next.js web application                           |
+| `nucleo-ldap-api`      | NestJS API and LDAP adapters                      |
+| `nucleo-ldap-docs`     | Project documentation                             |
+
+### Choose your entry point
+
+- Full local stack: start with the AppHost repository
+- Frontend only: use the Web repository
+- Backend/API only: use the API repository
+
+Each repository has its own setup commands and environment variables.
+Read the target repository README for exact install and run instructions.
+
+---
+
+## What you can do (V1)
 
 | Feature                          | V1  |
 | -------------------------------- | :-: |
 | List, create, edit, delete users | ✅  |
 | Reset & manage passwords         | ✅  |
 | Manage groups & memberships      | ✅  |
-| Connect to any LDAPv3 server     | ✅  |
+| Connect to OpenLDAP Server       | ✅  |
 | LDAPS / TLS support              | ✅  |
 | Audit log                        | ✅  |
 | Dynamic schema introspection     | ✅  |
 | Multi-server profiles            | 🔜  |
 | Active Directory support         | 🔜  |
 | DIT tree explorer                | 🔜  |
+| Connect to any LDAPv3 server     | 🔜  |
 
 ---
 
@@ -61,25 +94,14 @@ modern, lightweight, and Docker-friendly alternative.
 
 ---
 
-## Getting Started
-
-```bash
-git clone https://github.com/NucleoLDAP/nucleo-ldap
-cd nucleo-ldap
-cp .env.example .env
-docker compose up
-```
-
-> Open [http://localhost:3000](http://localhost:3000) and connect to your LDAP server.
-
----
-
 ## Repositories
 
-| Repo                                                               | Description                                |
-| ------------------------------------------------------------------ | ------------------------------------------ |
-| [nucleo-ldap](https://github.com/NucleoLDAP/nucleo-ldap)           | Main monorepo — backend, frontend, AppHost |
-| [nucleo-ldap-docs](https://github.com/NucleoLDAP/nucleo-ldap-docs) | Documentation                              |
+| Repo                                                                       | Description                      |
+| -------------------------------------------------------------------------- | -------------------------------- |
+| [nucleo-ldap-app-host](https://github.com/NucleoLDAP/nucleo-ldap-app-host) | AppHost and local orchestration  |
+| [nucleo-ldap-web](https://github.com/NucleoLDAP/nucleo-ldap-web)           | Frontend web application         |
+| [nucleo-ldap-api](https://github.com/NucleoLDAP/nucleo-ldap-api)           | Backend API and LDAP integration |
+| [nucleo-ldap-docs](https://github.com/NucleoLDAP/nucleo-ldap-docs)         | Documentation                    |
 
 ---
 
@@ -88,8 +110,8 @@ docker compose up
 Nucleo is in active development and welcomes contributions of all kinds —  
 bug reports, feature requests, code, or documentation.
 
-👉 Read the [Contributing Guide](https://github.com/NucleoLDAP/.github/blob/main/CONTRIBUTING.md)  
-💬 Open an [Issue](https://github.com/NucleoLDAP/nucleo-ldap/issues)  
-📬 Contact: nucleo.ldap@proton.me
+👉 Read the [Contributing Guide](../CONTRIBUTING.md)
+
+For issues and pull requests, open them in the repository that matches the scope of your change.
 
 ---

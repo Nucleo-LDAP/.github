@@ -12,6 +12,12 @@ assignees: ""
 
 > A clear and concise description of the bug.
 
+## Affected Area
+
+- Module / feature:
+- File or path (optional):
+- Additional context (optional):
+
 **Actual behaviour:**
 
 <!-- What happened? -->

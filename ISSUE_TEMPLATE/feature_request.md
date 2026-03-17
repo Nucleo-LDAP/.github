@@ -14,6 +14,12 @@ assignees: ""
 
 "I am blocked when..." or "It is currently impossible to..."
 
+## Scope in This Repository
+
+- Module / feature:
+- File or path (optional):
+- Additional context (optional):
+
 ---
 
 ## Proposed Solution

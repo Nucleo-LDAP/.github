@@ -6,10 +6,11 @@ Thank you for helping keep this project secure.
 
 Security fixes are primarily applied to:
 
-| Version / Branch | Status                        |
-| ---------------- | ----------------------------- |
-| `main`           | Supported                     |
-| Legacy branches  | Limited support (best effort) |
+| Scope | Status |
+| ----- | ------ |
+| Default branch of each actively maintained repository | Supported |
+| Release branches explicitly marked as supported | Supported |
+| Other branches, forks, and stale branches | Limited support (best effort) |
 
 ## Reporting a Vulnerability
 
@@ -17,8 +18,9 @@ Please do not open a public issue for security vulnerabilities.
 
 Use a private channel first:
 
-1. Open a private GitHub Security Advisory if available
-2. Otherwise contact maintainers through a private channel
+1. Open a private GitHub Security Advisory in the affected repository
+2. If scope is unclear, mention all potentially affected repositories in the report
+3. If private advisories are unavailable, contact maintainers through a private channel
 
 ## What to Include
 

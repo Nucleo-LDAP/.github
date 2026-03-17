@@ -8,6 +8,25 @@ Closes #<!-- issue number -->
 
 ---
 
+## Scope
+
+- [ ] Single-repository change
+- [ ] Cross-repository change (linked references below)
+
+Impacted area in this repository:
+
+<!-- e.g. auth module, settings page, deployment workflow, docs -->
+
+---
+
+## Cross-Repository Context
+
+Linked PRs or issues (if any):
+
+- N/A
+
+---
+
 ## Type of Change
 
 - [ ] Bug fix (non-breaking)
@@ -22,11 +41,9 @@ Closes #<!-- issue number -->
 
 ## Changes Made
 
-| Area        | Description |
-| ----------- | ----------- |
-| `src/...`   |             |
-| `tests/...` |             |
-| `docs/...`  |             |
+| Area in this repository | Description |
+| ----------------------- | ----------- |
+|                         |             |
 
 ---
 
