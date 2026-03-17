@@ -109,5 +109,3 @@ bug reports, feature requests, code, or documentation.
 👉 Read the [Contributing Guide](../CONTRIBUTING.md)
 
 For issues and pull requests, open them in the repository that matches the scope of your change.
-
----
