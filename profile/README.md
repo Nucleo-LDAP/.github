@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/NucleoLDAP/nucleo-ldap/main/assets/logo.png" alt="Nucleo LDAP" width="120" />
+<img src="../assets/nucleo-ldap-icon-without-bg.png" alt="Nucleo LDAP" width="120" />
 
 # Nucleo LDAP
 
@@ -21,10 +21,6 @@ Manage users, groups & organizational units on any LDAPv3 server — clean, fast
 
 Nucleo is **pre-1.0** and under active development.
 
-- Stable today: core LDAP connectivity, users/groups management, password reset, audit log
-- In progress: split into dedicated repositories (AppHost, Web app, API), Active Directory support, DIT explorer
-- Note: APIs and UX can evolve quickly until the first stable release
-
 ---
 
 ## Why Nucleo?
@@ -37,7 +33,7 @@ modern, lightweight, and Docker-friendly alternative.
 - 🌲 **Generic** — connects to any LDAPv3-compatible server (OpenLDAP, 389DS, lldap)
 - ⚡ **Fast & modern** — built with Next.js and NestJS, no legacy stack
 - 🔒 **Secure by default** — LDAPS/TLS, JWT auth, full audit log
-- 🐳 **Self-hostable** — single `docker compose up` to get started
+- 🐳 **Self-hostable** — Easy to deploy
 - 🧩 **Adapter-based** — clean hexagonal architecture, easy to extend
 
 ---
